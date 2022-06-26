@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "14665359-4b78-411c-922f-72a1a65b3288",
+		"name": "Api Endereco",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Incluir",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cep\":\"63902875\",\r\n    \"bairro\":\"Curicaca\",\r\n    \"logradouro\":\"Travessa José Capistrano Filho\",\r\n    \"localidade\":\"Quixadá\",\r\n    \"uf\":\"CE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/endereco/incluir",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"endereco",
+						"incluir"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/endereco/listar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"endereco",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Todos por Cep",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/endereco/87654321",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"endereco",
+						"87654321"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remover",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/endereco/23/excluir",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"endereco",
+						"23",
+						"excluir"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
